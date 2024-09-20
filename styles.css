@@ -1104,7 +1104,6 @@ header {
 /* Subscribe section */
 
 #subscribe {
-  margin-bottom: 5rem;
 
   .content {
     display: flex;
@@ -1191,6 +1190,26 @@ header {
 
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+/* Footer */
+
+#footer {
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: var(--color-gray-600);
+      padding-inline: 1rem;
     }
   }
 }
