@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="darkmode">
 
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,10 @@
   <header>
     <div class="container">
 
-      <a href="index.html"><img src="/images/solid.svg" alt="Silicon logo"></a>
+      <a href="index.html" id="silicon-logotype">
+        <img src="/images/siliconlogo.svg" alt="Silicon logo">
+        <p>Silicon</p>
+      </a>
 
       <nav class="navbar">
         <a href="#">Features</a>
@@ -54,15 +57,19 @@
           <p>We offer you a new generation of the mobile banking.
             Save, spend & manage money in your pocket.</p>
           <div class="buttons">
-            <a class="btn-download" href="#"><img src="/images/app-store.svg" alt="appstore"
-                class="btn-download-image"></a>
-            <a class="btn-download" href="#"><img src="images/google-play.svg" alt="google play"
-                class="btn-download-image"></a>
+            <a class="btn-download" href="#">
+              <img src="/images/app-store.svg" alt="appstore" class="btn-download-image darkmode-off">
+              <img src="/images/appstore-dark.svg" alt="appstore" class="btn-download-image darkmode-on">
+            </a>
+            <a class="btn-download" href="#">
+              <img src="images/google-play.svg" alt="google play" class="btn-download-image darkmode-off">
+              <img src="images/google-play-dark.svg" alt="google play" class="btn-download-image darkmode-on">
+            </a>
           </div>
 
           <div class="discover-more">
             <a href="#" class="btn-round">
-              <i class="fa-regular fa-chevron-down"></i>
+              <i class="fa-regular fa-chevron-down arrow"></i>
             </a>
             <span>Discover more</span>
           </div>
