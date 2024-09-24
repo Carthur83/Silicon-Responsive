@@ -27,6 +27,7 @@
 
   --color-bg-btn: var(--color-gray-900);
   --color-btn-round: var(--color-white);
+  --color-btn-round-secondary: var(--color-gray-100);
   --color-bg-card:var(--color-white);
   --color-bg-accordion: var(--color-white);
   --color-bg-accordion-content: #fafafa;
@@ -51,6 +52,7 @@
 
   --color-bg-btn: var(--color-white);
   --color-btn-round: rgba(255, 255, 255, 0.05);
+  --color-btn-round-secondary: rgb(255, 255, 255, 0.04);
   --color-bg-card: rgb(255, 255, 255, 0.04); 
   --color-bg-accordion: rgb(255, 255, 255, 0.04);
   --color-bg-accordion-content: rgb(255, 255, 255, 0.04);
@@ -1051,7 +1053,6 @@ header {
     @media(min-width: 768px) {
       border: none;
       box-shadow: var(--shadow-accordion);
-       
     }
   }
   
@@ -1072,11 +1073,18 @@ header {
     font-size: 16px;
     font-weight: 600;
     color: var(--color-text-primary);
-    /* cursor: pointer; */
     transition: background-color 0.3s ease;
 
-    img {
+    .btn-round {
+      border: none;
+      background-color: var(--color-btn-round-secondary);
+      box-shadow: none;
       cursor: pointer;
+    }
+
+    .active {
+      background-color: var(--color-primary);
+      color: var(--color-white);
     }
   }
 
