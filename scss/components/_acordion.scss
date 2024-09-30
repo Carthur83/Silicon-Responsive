@@ -1,0 +1,63 @@
+.accordion {
+  grid-area: accordion;
+  display: grid;
+  
+  @media(min-width: 768px) {
+    gap: .8rem;
+  }
+}
+
+.accordion-item {
+  border: 1px solid var(--color-border);
+  
+  @media(min-width: 768px) {
+    border: none;
+    box-shadow: var(--shadow-accordion);
+  }
+}
+
+.radius-8-top {
+  border-radius: 8px 8px 0 0;
+}
+.radius-8-bottom {
+  border-radius: 0 0 8px 8px;
+}
+
+.accordion-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: var(--color-bg-accordion);
+  
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease;
+
+  .btn-round {
+    border: none;
+    background-color: var(--color-btn-round-secondary);
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+}
+
+.accordion-content {
+  padding: 16px;
+  display: none;
+  background-color: var(--color-bg-accordion-content);
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}

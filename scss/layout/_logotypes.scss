@@ -1,0 +1,52 @@
+#logotypes {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    #logo5 {
+      display: none;
+    }
+    #logo6 {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    #logo5 {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #logo6 {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3rem;
+
+    @media (min-width: 1400px) {
+      margin-block: 6rem;
+    }
+
+    .logo-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: 100px;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+
+      @media (min-width: 1400px) {
+        width: 200px;
+      }
+    }
+  }
+}

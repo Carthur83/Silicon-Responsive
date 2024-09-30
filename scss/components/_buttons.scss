@@ -1,0 +1,169 @@
+.btn-primary {
+  @include btn;
+}
+
+.btn-toggle-dark {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 1rem;
+
+  .text-dark-mode {
+    display: none;
+
+    @include tablet {
+      display: block;
+      color: var(--color-text-secondary);
+    }
+
+    @include desktop {
+      display: block;
+      color: var(--color-text-secondary);
+    }    
+  }
+  /* Code from W3Schools.com */
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 26px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-gray-600);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2.8px;
+    background-color: var(--color-white);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--color-primary);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+.btn-sign-in {
+  display: none;
+  padding: .6em 1.6em;
+  border-radius: 4px;
+  font-weight: 500;
+   i {
+    margin-right: .5em;
+   }
+
+   @include desktop {
+    display: block;
+  }
+}
+
+.btn-mobile {
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text-secondary);
+  background-color: transparent;
+
+  @media (min-width: 1400px) {
+    display: none;
+  }
+}
+
+.btn-download {
+  background-color: var(--color-bg-btn);
+  padding: .6em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--color-btn-hover-secondary);
+  }
+  &:active {
+    background-color: var(--color-btn-active-secondary);
+  }
+}
+
+//  changes .btn-download images when darkmode is turned on/off
+.darkmode-on {
+  display: none;
+}
+.darkmode-off {
+  display: block;
+}
+
+.btn-round {
+  @include flex-center;
+  background-color: var(--color-btn-round);
+  border-radius: 50%;
+  padding: 1em;
+  box-shadow: var(--shadow-btn-round);
+  color: var(--color-text-primary);
+}
+
+.btn-learn-more {
+  width: 12em;
+  font-size: 14px;
+  padding: 13px 18px;
+  border-radius: 6px;
+  gap: 12px;
+}
+
+.btn-contact-us {
+  font-weight: 600;
+  font-size: 14px;
+  padding: .9rem 1.5rem;
+  border-radius: 6px;
+}
+
+.btn-subscribe {
+  border-radius: 0 8px 8px 0;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-inline: 1.5rem;
+  width: 30%;
+}
