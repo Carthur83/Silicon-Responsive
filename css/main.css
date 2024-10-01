@@ -80,12 +80,14 @@ p {
   --color-bg-card:var(--color-white);
   --color-bg-accordion: var(--color-white);
   --color-bg-accordion-content: #fafafa;
+  --color-bg-input-desktop: var(--color-white);
   --color-bg-input: var(--color-white);
   --color-btn-hover: #6164f7e7;
   --color-btn-active: #6365f1a6;
   --color-btn-hover-secondary: var(--color-primary);
   --color-btn-active-secondary: #6164f7e7;
   --color-border: var(--color-gray-300);
+  --color-border-input: var(--color-gray-400);
   --shadow-btn-round: 0px 4px 5px var(--color-gray-300);
   --shadow-cards: 5px 5px 10px var(--color-gray-300);
   --shadow-accordion: 0px 2px 10px var(--color-gray-300);
@@ -110,6 +112,7 @@ p {
   --color-btn-hover-secondary: #ffffffe5;
   --color-btn-active-secondary: #ffffffa1;
   --color-border: rgba(255, 255, 255, 0.15);
+  --color-border-input: rgb(255, 255, 255, 0.2);
   --shadow-btn-round: none;
   --shadow-cards: none;
   --shadow-accordion: none;
@@ -390,7 +393,7 @@ p {
   width: 100%;
   font-size: 16px;
   background-color: var(--color-bg-input);
-  border: 1px solid var(--color-gray-400);
+  border: 1px solid var(--color-border-input);
   border-radius: 8px 0 0 8px;
   padding: 0.9rem;
   padding-left: 2.5rem;
@@ -404,13 +407,6 @@ p {
 @media (min-width: 1400px) {
   .form .form-input {
     background-color: var(--color-bg-input-desktop);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
-  .form .form-input::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.3);
-  }
-  .form .form-input::placeholder {
-    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -925,7 +921,7 @@ header .navbar a:hover {
 #features-2 .container .content-box-1 {
   display: flex;
   flex-direction: column;
-  padding-left: 5rem;
+  padding-left: 6rem;
 }
 #features-2 .container .content-box-1 h2 {
   text-wrap: balance;
@@ -958,7 +954,7 @@ header .navbar a:hover {
   color: var(--color-text-primary);
 }
 #features-2 .img-contacts {
-  padding-left: 5rem;
+  padding-left: 6rem;
 }
 #features-2 .info-boxes {
   display: flex;
@@ -1256,7 +1252,7 @@ header .navbar a:hover {
 }
 @media (min-width: 1400px) {
   #subscribe .icon {
-    color: rgba(255, 255, 255, 0.3);
+    color: var(--color-gray-500);
   }
 }
 

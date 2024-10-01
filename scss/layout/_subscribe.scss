@@ -57,7 +57,7 @@
     font-size: 1.1rem;
 
     @media (min-width: 1400px) {
-      color: rgb(255, 255, 255, 0.3);
+      color: var(--color-gray-500);
     }
   }
 }

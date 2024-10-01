@@ -12,7 +12,7 @@
     width: 100%;
     font-size: 16px;
     background-color: var(--color-bg-input);
-    border: 1px solid var(--color-gray-400);
+    border: 1px solid var(--color-border-input);
     border-radius: 8px 0 0 8px;
     padding: .9rem;
     padding-left: 2.5rem;
@@ -22,10 +22,6 @@
 
     @media (min-width: 1400px) {
       background-color: var(--color-bg-input-desktop);
-      border:  1px solid rgb(255, 255, 255, 0.2);
-      &::placeholder {
-        color: rgb(255, 255, 255, 0.3);
-      }
     }
   }
 }
