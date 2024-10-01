@@ -26,27 +26,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 p {
@@ -241,14 +241,14 @@ p {
   }
 }
 
-.btn-mobile {
+.btn-menu {
   border: none;
   font-size: 1.5rem;
   color: var(--color-text-secondary);
   background-color: transparent;
 }
 @media (min-width: 1400px) {
-  .btn-mobile {
+  .btn-menu {
     display: none;
   }
 }
@@ -1075,40 +1075,40 @@ header .navbar a:hover {
   grid-area: content;
   grid-area: 1;
 }
-#faq .content .headline {
+#faq .headline {
   grid-area: headline;
 }
-#faq .content .headline h2 {
+#faq .headline h2 {
   font-size: 1.6rem;
   color: var(--color-text-primary);
 }
 @media (min-width: 768px) {
-  #faq .content .headline h2 {
+  #faq .headline h2 {
     font-size: 2rem;
     padding-inline: 11rem;
   }
 }
 @media (min-width: 1400px) {
-  #faq .content .headline h2 {
+  #faq .headline h2 {
     padding-inline: 0;
     text-align: start;
     padding-right: 18rem;
   }
 }
-#faq .content .headline p {
+#faq .headline p {
   font-size: 1.125rem;
   color: var(--color-text-secondary);
   padding-top: 1rem;
   padding-bottom: 4rem;
 }
 @media (min-width: 768px) {
-  #faq .content .headline p {
+  #faq .headline p {
     padding-top: 2rem;
     padding-inline: 8rem;
   }
 }
 @media (min-width: 1400px) {
-  #faq .content .headline p {
+  #faq .headline p {
     padding-inline: 0;
     text-align: start;
     padding-right: 14rem;
